@@ -1,0 +1,9 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+scipy>=1.10
+plotly>=5.15
+tqdm>=4.65
+python-dateutil>=2.8
+openpyxl>=3.1
+mssev
