@@ -105,10 +105,3 @@ a leading center for neurological research and data-driven healthcare.
 * Ready for **ML & statistical modeling workflows**
 * Clean, professional structure suitable for **research & portfolio**
 
----
-
-If you want next-level polish, I can:
-
-* add a **diagram of the pipeline flow**
-* tailor it for **LinkedIn / CV bullets**
-* or make a **short “project pitch” paragraph** you can reuse anywhere 🚀
