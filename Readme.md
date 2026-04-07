@@ -1,7 +1,3 @@
-Great—here’s a more **GitHub showcase-style version** with a sharper intro, badges, and a more “portfolio-ready” feel 👇
-
----
-
 # 🧪 Clinical Data Processing Pipeline
 
 **Fondazione Mondino IRCCS, Pavia**
