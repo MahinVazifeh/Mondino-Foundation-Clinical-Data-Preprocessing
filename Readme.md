@@ -1,107 +1,1 @@
-# 🧪 Clinical Data Processing Pipeline
-
-**Fondazione Mondino IRCCS, Pavia**
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-orange)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Focus](https://img.shields.io/badge/Focus-Clinical%20Data%20Science-informational)
-
----
-
-## 🚀 Project Overview
-
-This repository presents a **modular clinical data processing pipeline** built with **Jupyter notebooks**, designed for **real-world healthcare datasets**.
-
-It enables scalable and reproducible workflows for:
-
-* 🧹 Cleaning and structuring clinical data
-* 🧬 Engineering meaningful biomedical features
-* 📊 Modeling and tracking disease progression
-* ✅ Ensuring high standards of data quality
-
-> 💡 **Use case:** Designed with a focus on **longitudinal analysis**, particularly for studying and predicting progression in diseases such as **Multiple Sclerosis (MS)**.
-
----
-
-## 🧠 Why This Project Matters
-
-Clinical datasets are often:
-
-* messy
-* incomplete
-* longitudinally complex
-
-This pipeline addresses those challenges by providing:
-
-* **structured preprocessing workflows**
-* **domain-specific feature engineering**
-* **robust quality control mechanisms**
-
----
-
-## ⚙️ Pipeline Capabilities
-
-* 🧬 **Feature Selection & Engineering**
-* 🧹 **Data Cleaning & Outlier Detection**
-* 📅 **Temporal Feature Extraction**
-* 📈 **Progression Metrics (e.g., MSSS)**
-* 🎯 **Normalization & Standardization**
-* ✅ **Data Validation & Consistency Checks**
-
----
-
-## 📂 Repository Structure
-
-### 🔧 Core Modules
-
-| Step | Notebook                                              | Purpose                                |
-| ---- | ----------------------------------------------------- | -------------------------------------- |
-| 1    | `Select_Important_Features_From_Original.ipynb`       | Extract key clinical variables         |
-| 1.5  | `Update_Original_Data.ipynb`                          | Integrate cleaned and derived features |
-| 2    | `Year_Month_DateOfVisit.ipynb`                        | Generate temporal variables            |
-| 3    | `Relapse_Feature.ipynb`                               | Encode relapse events                  |
-| 4    | `Treatment.ipynb`                                     | Structure treatment/intervention data  |
-| 5    | `MSSS_Progression_Features.ipynb`                     | Build progression-related features     |
-| 6    | `Delete_Duplicate_Age_at_Visit_Date.ipynb`            | Remove duplicated entries              |
-| 7    | `MSSS_Score.ipynb`                                    | Compute MSSS scores                    |
-| 8    | `Feature_Selection_for_MSSS_Data_Visualization.ipynb` | Optimize features for visualization    |
-| 9    | `Season_Feature_Generation.ipynb`                     | Add seasonal context                   |
-| 10   | `Outlier_Detection.ipynb`                             | Identify anomalies                     |
-| 11   | `Round_SubScores.ipynb`                               | Standardize numerical outputs          |
-
----
-
-## 🧩 Design Principles
-
-* **Modular** → Each notebook works independently or in sequence
-* **Reproducible** → Clear, structured data transformations
-* **Scalable** → Adaptable to different clinical datasets
-* **Domain-focused** → Built for longitudinal clinical research
-
----
-
-## 📊 Example Applications
-
-* Disease progression modeling
-* Clinical cohort analysis
-* Feature preparation for machine learning models
-* Visualization of longitudinal patient trajectories
-
----
-
-## 🏥 Context
-
-Developed in a clinical research setting at
-**Fondazione Mondino IRCCS (Pavia, Italy)**,
-a leading center for neurological research and data-driven healthcare.
-
----
-
-## ✨ Highlights
-
-* Real-world **clinical data pipeline**
-* Focus on **Multiple Sclerosis (MS)** progression
-* Ready for **ML & statistical modeling workflows**
-* Clean, professional structure suitable for **research & portfolio**
-
+# 🧪 Clinical Data Processing Pipeline**Fondazione Mondino IRCCS, Pavia**![Python](https://img.shields.io/badge/Python-3.10+-blue)![Status](https://img.shields.io/badge/Status-Active-success)![Focus](https://img.shields.io/badge/Focus-Clinical%20Data%20Science-informational)---## 🚀 Project OverviewThis repository presents a **modular clinical data processing pipeline** built in **Python** for real-world healthcare datasets.It is designed to support scalable and reproducible workflows for:- 🧹 cleaning and structuring clinical data- 🧬 engineering meaningful biomedical features- 📊 modeling and tracking disease progression- ✅ ensuring high standards of data quality> 💡 **Use case:** Designed for **longitudinal clinical analysis**, with a focus on **Multiple Sclerosis (MS)** progression.---## 🧠 Why This Project MattersClinical datasets are often:- messy- incomplete- longitudinally complexThis pipeline addresses those challenges by providing:- structured preprocessing workflows- domain-specific feature engineering- robust quality control mechanisms---## ⚙️ Pipeline Capabilities- 🧬 Feature Selection & Engineering- 🧹 Data Cleaning & Outlier Detection- 📅 Temporal Feature Extraction- 📈 Progression Metrics (e.g., MSSS)- 🎯 Normalization & Standardization- ✅ Data Validation & Consistency Checks---## 📂 Repository Structure```textproject/├── src/                # Python pipeline scripts│   ├── config.py│   ├── __init__.py│   └── ...│├── data/               # Raw data (not included)├── outputs/            # Generated outputs (not included)│├── requirements.txt├── .gitignore└── README.md## 📂 Repository Structure| Step | Script                                   | Purpose                                               || ---- | ---------------------------------------- | ----------------------------------------------------- || 1    | `prepare_clinical_data.py`               | Clean and structure original clinical data            || 2    | `compare_datasets.py`                    | Compare datasets and identify missing / extra rows    || 3    | `create_first_last_patient.py`           | Generate first and last visit information per patient || 4    | `select_last_observations.py`            | Keep the last N observations per patient              || 5    | `add_relapse_features.py`                | Add relapse-based features                            || 6    | `add_age_at_visit.py`                    | Calculate patient age at visit date                   || 7    | `add_disease_duration.py`                | Compute duration from onset to visit                  || 8    | `add_treatment_features.py`              | Add treatment-related features                        || 9    | `add_time_since_first_visit_features.py` | Create time-difference features from first visit      || 10   | `build_msss_outcome_dataset.py`          | Compute MSSS and progression outcomes                 || 11   | `add_season_features.py`                 | Add seasonal visit features                           || 12   | `remove_slope_outliers.py`               | Remove outliers from slope features                   || 13   | `round_features.py`                      | Round selected numerical features                     || 14   | `plot_msss_relationships.py`             | Generate exploratory MSSS plots                       |
